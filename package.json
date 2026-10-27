@@ -3,6 +3,7 @@
   "publisher": "shiki-service",
   "displayName": "Shiki Service",
   "description": "Color theme service for VScode SSH",
+    "repository": "https://github.com/Lramseyer/shiki-service",
   "version": "0.0.1",
   "engines": { "vscode": "^1.140.0" },
   "categories": ["Other"],
