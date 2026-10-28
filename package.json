@@ -3,8 +3,8 @@
   "publisher": "shiki-service",
   "displayName": "Shiki Service",
   "description": "Color theme service for VScode SSH",
-    "repository": "https://github.com/Lramseyer/shiki-service",
-  "version": "0.0.1",
+  "repository": "https://github.com/Lramseyer/shiki-service",
+  "version": "0.0.2",
   "engines": { "vscode": "^1.140.0" },
   "categories": ["Other"],
   "extensionKind": ["ui"],
@@ -14,7 +14,15 @@
     "commands": [
       {
         "command": "shiki.getUserTheme",
-        "title": "Get Theme Colors"
+        "title": "Get User Theme Colors"
+      },
+      {
+        "command": "shiki.getTheme",
+        "title": "Get Colors for Theme"
+      },
+      {
+        "command": "shiki.getUserLangs",
+        "title": "Get Supported Languages"
       }
     ]
   },

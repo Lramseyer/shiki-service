@@ -10,7 +10,15 @@ This is a simple extension exposing the `getUserTheme();` function from [vscode-
 
 ## Using with your extension
 
-This extension has only one (async) command: `shiki.getUserTheme`. It takes no arguments, and returns the same result as [getUserTheme](https://github.com/yoavbls/vscode-shiki-bridge#getusertheme) from the vscode-shiki-bridge package.
+This extension has 3 (async) commands:
+
+- `shiki.getUserTheme`
+- `shiki.getTheme`
+- `shiki.getLanguages`
+
+The argument and return structure for each command is the same as their respective functions outlined in the API linked below. Note that these 3 functions return Promises, so you will need to keep that in mind.
+
+[https://github.com/yoavbls/vscode-shiki-bridge](https://github.com/yoavbls/vscode-shiki-bridge)
 
 ## Building the extension
 

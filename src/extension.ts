@@ -1,9 +1,12 @@
 import * as vscode from 'vscode';
-import { getUserTheme } from 'vscode-shiki-bridge';
+import { getUserTheme, getTheme, getUserLangs } from 'vscode-shiki-bridge';
 
 export function activate(context: vscode.ExtensionContext) {
-  const cmd = vscode.commands.registerCommand('shiki.getUserTheme', getUserTheme);
-  context.subscriptions.push(cmd);
+  context.subscriptions.push(
+    vscode.commands.registerCommand('shiki.getUserTheme', getUserTheme),
+    vscode.commands.registerCommand('shiki.getTheme',     getTheme),
+    vscode.commands.registerCommand('shiki.getUserLangs', getUserLangs)
+  );
 }
 
 export function deactivate() {}
